@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  overflow-x: clip;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+body {
+  @apply bg-ink-950 font-sans text-fog antialiased;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: rgba(245, 184, 61, 0.35);
+  color: #fff;
+}
+
+:focus-visible {
+  outline: 2px solid #f5b83d;
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+/* slim scrollbar */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #262f49 #0b0f19;
+}
+
+@layer components {
+  .glass {
+    background: linear-gradient(180deg, rgba(26, 34, 54, 0.62), rgba(17, 23, 37, 0.55));
+    border: 1px solid rgba(142, 153, 180, 0.14);
+    -webkit-backdrop-filter: blur(14px);
+    backdrop-filter: blur(14px);
+  }
+
+  /* soft light that follows the mouse inside a card (position set from JS) */
+  .spot {
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+  }
+  .spot::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(420px circle at var(--mx, 50%) var(--my, 50%), rgba(245, 184, 61, 0.11), transparent 55%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    z-index: 0;
+  }
+  .spot:hover::before {
+    opacity: 1;
+  }
+  .spot:hover {
+    border-color: rgba(245, 184, 61, 0.35);
+  }
+  .spot > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  .chip {
+    @apply inline-flex items-center rounded-full border border-ink-600/70 bg-ink-800/70 px-3 py-1 text-sm text-fog/90;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition duration-200 active:scale-[0.97];
+  }
+  .btn-primary {
+    @apply btn bg-signal text-ink-950 shadow-[0_0_0_0_rgba(245,184,61,0.5)] hover:bg-signal-soft hover:shadow-[0_8px_30px_-6px_rgba(245,184,61,0.55)];
+  }
+  .btn-ghost {
+    @apply btn border border-ink-600 bg-ink-800/40 text-fog hover:border-signal/60 hover:bg-ink-700/60;
+  }
+
+  .field {
+    @apply w-full rounded-xl border border-ink-600 bg-ink-900/80 px-4 py-3 text-sm text-fog placeholder:text-mist/70 transition focus:border-signal focus:outline-none focus:ring-2 focus:ring-signal/30;
+  }
+
+  .section {
+    @apply relative mx-auto w-full max-w-6xl px-5 py-20 sm:px-8 sm:py-28;
+  }
+}
+
+/* faint graph-paper grid, used behind the hero */
+.grid-paper {
+  background-image:
+    linear-gradient(rgba(142, 153, 180, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(142, 153, 180, 0.07) 1px, transparent 1px);
+  background-size: 44px 44px;
+  -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, #000 30%, transparent 75%);
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, #000 30%, transparent 75%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
