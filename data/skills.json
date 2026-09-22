@@ -1,0 +1,51 @@
+[
+  {
+    "title": "Analytics & BI",
+    "icon": "chart",
+    "items": [
+      "Power BI",
+      "Power Query",
+      "Microsoft Excel",
+      "Data Visualization",
+      "Streamlit"
+    ]
+  },
+  {
+    "title": "Python & Data",
+    "icon": "code",
+    "items": [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Scikit-learn"
+    ]
+  },
+  {
+    "title": "Databases",
+    "icon": "database",
+    "items": [
+      "SQL",
+      "PostgreSQL"
+    ]
+  },
+  {
+    "title": "ML & Modeling",
+    "icon": "brain",
+    "items": [
+      "Predictive Modeling",
+      "Customer Churn Analysis",
+      "NLP",
+      "Machine Learning"
+    ]
+  },
+  {
+    "title": "Web & Tools",
+    "icon": "wrench",
+    "items": [
+      "HTML",
+      "CSS",
+      "Git",
+      "VS Code"
+    ]
+  }
+]

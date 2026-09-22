@@ -1,0 +1,63 @@
+[
+  {
+    "id": "tn-job-market-analysis",
+    "title": "TN Job Market Analysis",
+    "kind": "line",
+    "summary": "An interactive Streamlit dashboard that shows Tamil Nadu job market trends, demand and employment opportunities.",
+    "stack": [
+      "Python",
+      "Pandas",
+      "Scikit-learn",
+      "Streamlit"
+    ],
+    "highlights": [
+      "Built an interactive Streamlit dashboard to analyze Tamil Nadu job market trends, demand and employment opportunities.",
+      "Used Python, Pandas and data visualization techniques to turn the data into actionable insights.",
+      "Added dynamic charts and filters so anyone can explore the data by themselves."
+    ],
+    "repo": "",
+    "demo": "",
+    "period": "",
+    "file": "",
+    "createdAt": "2026-09-22T11:44:21.871Z"
+  },
+  {
+    "id": "business-insights-sales-dashboard",
+    "title": "Business Insights & Sales Performance Dashboard",
+    "kind": "bars",
+    "summary": "A Power BI dashboard that tracks sales performance, profitability and key business metrics in one place.",
+    "stack": [
+      "Excel",
+      "Power BI"
+    ],
+    "highlights": [
+      "Developed a Power BI dashboard to analyze sales performance, profitability and key business metrics.",
+      "Designed it to support data-driven decision-making, so managers can see what is selling and what is not."
+    ],
+    "repo": "",
+    "demo": "",
+    "period": "",
+    "file": "",
+    "createdAt": "2026-09-22T11:44:21.871Z"
+  },
+  {
+    "id": "pizza-sales-dashboard",
+    "title": "Pizza Sales Dashboard",
+    "kind": "donut",
+    "summary": "An Excel dashboard built on 48,620 pizza order rows, with pivot tables and slicers for interactive filtering.",
+    "stack": [
+      "Excel",
+      "Pivot Tables",
+      "Slicers"
+    ],
+    "highlights": [
+      "Worked with a raw order table of 48,620 rows and organized it into pivot sheets.",
+      "Built a dashboard sheet with slicers so the numbers can be filtered with a click."
+    ],
+    "repo": "",
+    "demo": "",
+    "period": "",
+    "file": "",
+    "createdAt": "2026-09-22T11:44:21.871Z"
+  }
+]
