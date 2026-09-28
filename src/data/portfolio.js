@@ -24,8 +24,8 @@ export const profile = {
 
 export const about = {
   paragraphs: [
-    'I am an Information Technology graduate who enjoys the full path from a messy spreadsheet to a clear decision: cleaning data, finding the pattern, and presenting it in a dashboard that a non-technical person can read in a minute.',
-    'Through internships and self-driven projects I have worked across data analytics, AI/ML and data visualization, using Python, Power BI, PostgreSQL, Streamlit and Excel. I am looking for a Data Analyst role where I can keep turning data into business decisions.',
+    'I am an Information Technology graduate passionate about turning raw data into meaningful business insights and actionable decisions. I enjoy analyzing data, identifying trends, understanding business requirements, and creating dashboards and reports that support informed decision-making.',
+    'Through internships and self-driven projects, I have gained experience in data analytics, business analysis, data visualization, and reporting using Python, Power BI, PostgreSQL, Streamlit, and Excel. I am seeking a Data Analyst or Business Analyst role where I can combine analytical and problem-solving skills to improve business processes and drive data-driven decisions.',
   ],
   facts: [
     { label: 'Based in', value: 'Bangalore, India' },
