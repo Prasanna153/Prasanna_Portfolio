@@ -1,0 +1,22 @@
+[
+  {
+    "id": "seed-python-guvi",
+    "title": "Python Programming Course in Tamil: Beginner to Advanced",
+    "issuer": "GUVI Geek Networks (HCL GUVI)",
+    "date": "August 12, 2023",
+    "category": "Course",
+    "file": "python-programming-guvi-hcl.jpg",
+    "verifyUrl": "https://www.guvi.in/certificate?id=5NI8b616720lG10r19",
+    "createdAt": "2023-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-uiux-internship",
+    "title": "UI/UX Internship Completion Certificate",
+    "issuer": "Skill Intern (Vidhyapeet Skill Intern Pvt. Ltd.)",
+    "date": "July 4 – August 4, 2025",
+    "category": "Internship",
+    "file": "ui-ux-internship-skill-intern.jpg",
+    "verifyUrl": "",
+    "createdAt": "2025-08-04T00:00:00.000Z"
+  }
+]
